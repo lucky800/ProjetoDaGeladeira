@@ -36,15 +36,6 @@ class _loginPageState extends State<loginPage> {
               ),
               SizedBox(height: 10),
               TextField(
-                onChanged: (text) => {senha = text},
-                obscureText: true,
-                decoration: InputDecoration(
-                  border: OutlineInputBorder(),
-                  labelText: 'Senha',
-                ),
-              ),
-              SizedBox(height: 10),
-              TextField(
                 onChanged: (text) => {email = text},
                 keyboardType: TextInputType.emailAddress,
                 decoration: InputDecoration(
@@ -52,6 +43,16 @@ class _loginPageState extends State<loginPage> {
                   labelText: 'Email',
                 ),
               ),
+              SizedBox(height: 10),
+              TextField(
+                onChanged: (text) => {senha = text},
+                obscureText: true,
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(),
+                  labelText: 'Senha',
+                ),
+              ),
+
               GestureDetector(
                 onTap: () {
                   Navigator.push(
